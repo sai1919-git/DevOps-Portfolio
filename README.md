@@ -46,14 +46,14 @@ This project helped me understand Docker images vs containers and real-world con
 ```bash
 docker build -t python-flask-app .
 docker run -d -p 80:5000 python-flask-app
+'''
 
 ## 🎯 Goal
 The goal of this project is to understand how applications can be packaged and deployed consistently across environments using Docker.
 By containerizing a Python web application, I aimed to eliminate environment dependency issues and learn how modern applications are deployed using containers on cloud servers.
 
 
-
-###🔹 Project 3: CI Pipeline with Jenkins, Docker & Flask
+###🔹** Project 3: CI Pipeline with Jenkins (Build + Test)
 
 **Description:**
 Implemented a Continuous Integration (CI) pipeline using Jenkins to automate the build and deployment of a Dockerized Python Flask application.
@@ -88,9 +88,11 @@ Removes any existing running container
 Runs a new container in detached mode with port mapping
 
 ## Docker Commands Used
+'''
 docker build -t project3-app .
 docker rm -f $(docker ps -aq --filter ancestor=project3-app)
 docker run -d -p 5000:5000 project3-app
+'''
 
 🎯 Goal
 The goal of this project is to understand how CI pipelines automate application builds and deployments using Jenkins and Docker.
