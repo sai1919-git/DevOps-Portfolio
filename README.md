@@ -9,7 +9,7 @@ I focus on building, deploying, automating, and monitoring applications in cloud
 **Tools:** AWS EC2, Ubuntu Linux, GitHub, Nginx  
 **Description:**
 Deployed a static HTML application manually on an Ubuntu EC2 instance using GitHub and Linux.  
-🔗 Repository: https://github.com/sai1919-git/projects
+🔗 Repository: https://github.com/sai1919-git/projects/tree/main/project-1
 
 ## Tools
 - AWS (EC2, IAM)
@@ -27,7 +27,7 @@ To understand how web applications are hosted in real environments by setting up
 Built a Python Flask web application and containerized it using Docker by creating a Dockerfile.
 The Docker image was built and deployed on an AWS EC2 Ubuntu instance with proper port mapping.
 This project helped me understand Docker images vs containers and real-world containerized deployment.
-🔗 Repository: https://github.com/sai1919-git/projects
+🔗 Repository: https://github.com/sai1919-git/projects/tree/main/project-2
 
 ## Tools Used
 - Python (Flask)
