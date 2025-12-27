@@ -13,11 +13,10 @@ I focus on building, deploying, automating, and monitoring applications in cloud
 ---
 
 ## 🛠️ Skills
-- AWS (EC2, IAM, VPC)
+- AWS (EC2, IAM)
 - Linux (Ubuntu)
 - Git & GitHub
 - Nginx
 
 ## 🎯 Goal
-To build a strong foundation in DevOps by understanding Linux, Git, AWS EC2, and manual application deployment before moving to automation and CI/CD.
-
+To understand how web applications are hosted in real environments by setting up an Nginx web server on AWS EC2 and manually deploying application code using Linux and Git.
