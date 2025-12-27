@@ -67,13 +67,12 @@ docker run -d -p 80:5000 python-flask-app
 ```
 🎯 Goal
 To understand how applications can be packaged and deployed consistently across environments using Docker and containers.
----
 
 ---
 
-### 🔹 Project 3: CI Pipeline with Jenkins (Dockerized Flask App)
+## 🔹 Project 3: CI Pipeline with Jenkins (Dockerized Flask App)
 
-#### 📌 Description
+### 📌 Description
 Implemented a **Continuous Integration (CI) pipeline** using Jenkins to automate the build and deployment of a Dockerized Python Flask application.  
 The Jenkins pipeline automatically pulls source code from GitHub, builds a Docker image, removes any existing container, and deploys the latest version on an AWS EC2 instance.
 
@@ -82,7 +81,7 @@ This project provided hands-on experience with **real-world CI workflows**, **Je
 🔗 **Repository:**  
 https://github.com/sai1919-git/projects/tree/main/project-3
 
-#### 🛠️ Tools Used
+### 🛠️ Tools Used
 - Jenkins  
 - Docker  
 - Python (Flask)  
@@ -90,7 +89,7 @@ https://github.com/sai1919-git/projects/tree/main/project-3
 - AWS EC2 (Ubuntu Linux)
 
 
-#### ✅ What I Did
+### ✅ What I Did
 - Created a Python Flask web application  
 - Containerized the application using Docker  
 - Installed and configured Jenkins on AWS EC2  
@@ -102,13 +101,13 @@ https://github.com/sai1919-git/projects/tree/main/project-3
 - Accessed the application via EC2 public IP  
 
 
-#### ⚙️ Jenkins Pipeline Flow
+### ⚙️ Jenkins Pipeline Flow
 1. Jenkins pulls the latest code from GitHub  
 2. Docker image is built from the Dockerfile  
 3. Existing container (if any) is removed  
 4. New container is started in detached mode with port mapping  
 
-#### 🐳 Docker Commands Used
+### 🐳 Docker Commands Used
 ```bash
 docker build -t project3-app .
 docker rm -f $(docker ps -aq --filter ancestor=project3-app)
