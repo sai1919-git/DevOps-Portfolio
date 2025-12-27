@@ -1,4 +1,4 @@
-# 🚀 DevOps Portfolio – Sai
+# 🚀 DevOps Portfolio – Sai Gulipalli
 
 ## About Me
 Aspiring DevOps fresher with hands-on experience in AWS, Linux, Git, Docker, Jenkins, Kubernetes,maven,terraform and monitoring tools.  
