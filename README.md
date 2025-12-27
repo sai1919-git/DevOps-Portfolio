@@ -65,7 +65,7 @@ https://github.com/sai1919-git/projects/tree/main/project-2
 docker build -t python-flask-app .
 docker run -d -p 80:5000 python-flask-app
 ```
-🎯 Goal
+### 🎯 Goal
 To understand how applications can be packaged and deployed consistently across environments using Docker and containers.
 
 ---
@@ -113,7 +113,8 @@ docker build -t project3-app .
 docker rm -f $(docker ps -aq --filter ancestor=project3-app)
 docker run -d -p 5000:5000 project3-app
 ```
-🎯 Goal To understand how CI pipelines automate application builds and deployments using Jenkins and Docker. By integrating GitHub, Jenkins, Docker, and AWS EC2, I learned how real DevOps teams continuously build and deploy applications efficiently.
+### 🎯 Goal
+To understand how CI pipelines automate application builds and deployments using Jenkins and Docker. By integrating GitHub, Jenkins, Docker, and AWS EC2, I learned how real DevOps teams continuously build and deploy applications efficiently.
 
 ---
 
