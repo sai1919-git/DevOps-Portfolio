@@ -46,7 +46,7 @@ This project helped me understand Docker images vs containers and real-world con
 ```bash
 docker build -t python-flask-app .
 docker run -d -p 80:5000 python-flask-app
-'''
+```
 
 ## 🎯 Goal
 The goal of this project is to understand how applications can be packaged and deployed consistently across environments using Docker.
@@ -88,11 +88,11 @@ Removes any existing running container
 Runs a new container in detached mode with port mapping
 
 ## Docker Commands Used
-'''
+```
 docker build -t project3-app .
 docker rm -f $(docker ps -aq --filter ancestor=project3-app)
 docker run -d -p 5000:5000 project3-app
-'''
+```
 
 🎯 Goal
 The goal of this project is to understand how CI pipelines automate application builds and deployments using Jenkins and Docker.
