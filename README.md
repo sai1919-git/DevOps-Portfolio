@@ -7,12 +7,11 @@ I focus on building, deploying, automating, and monitoring applications in cloud
 
 ### 🔹 Project 1: Manual Deployment on AWS EC2
 **Tools:** AWS EC2, Ubuntu Linux, GitHub, Nginx  
-**Description:** Deployed a static HTML application manually on an Ubuntu EC2 instance using GitHub and Linux.  
-🔗 Repository: https://github.com/sai1919-git/projects-
+**Description:**
+Deployed a static HTML application manually on an Ubuntu EC2 instance using GitHub and Linux.  
+🔗 Repository: https://github.com/sai1919-git/projects
 
----
-
-## 🛠️ Skills
+## Tools
 - AWS (EC2, IAM)
 - Linux (Ubuntu)
 - Git & GitHub
@@ -20,3 +19,39 @@ I focus on building, deploying, automating, and monitoring applications in cloud
 
 ## 🎯 Goal
 To understand how web applications are hosted in real environments by setting up an Nginx web server on AWS EC2 and manually deploying application code using Linux and Git.
+
+
+### 🔹 Project 2: Dockerized Python Application
+
+**Description:** 
+Built a Python Flask web application and containerized it using Docker by creating a Dockerfile.
+The Docker image was built and deployed on an AWS EC2 Ubuntu instance with proper port mapping.
+This project helped me understand Docker images vs containers and real-world containerized deployment.
+🔗 Repository: https://github.com/sai1919-git/projects
+
+## Tools Used
+- Python (Flask)
+- Docker
+- Git & GitHub
+- AWS EC2 (Ubuntu)
+
+## What I Did
+- Created a simple Python Flask web application
+- Wrote a Dockerfile to containerize the app
+- Built Docker image locally and on EC2
+- Ran the container using port mapping
+- Accessed the application via EC2 public IP
+
+## Docker Commands Used
+```bash
+docker build -t python-flask-app .
+docker run -d -p 80:5000 python-flask-app
+
+## 🎯 Goal
+The goal of this project is to understand how applications can be packaged and deployed consistently across environments using Docker.
+By containerizing a Python web application, I aimed to eliminate environment dependency issues and learn how modern applications are deployed using containers on cloud servers.
+
+
+
+
+
