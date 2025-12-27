@@ -51,6 +51,8 @@ docker run -d -p 80:5000 python-flask-app
 The goal of this project is to understand how applications can be packaged and deployed consistently across environments using Docker.
 By containerizing a Python web application, I aimed to eliminate environment dependency issues and learn how modern applications are deployed using containers on cloud servers.
 
+
+
 ###🔹 Project 3: CI Pipeline with Jenkins, Docker & Flask
 
 **Description:**
