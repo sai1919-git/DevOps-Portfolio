@@ -1,7 +1,7 @@
 # 🚀 DevOps Portfolio – Sai
 
 ## About Me
-Aspiring DevOps fresher with hands-on experience in AWS, Linux, Git, Docker, Jenkins, Kubernetes, and monitoring tools.  
+Aspiring DevOps fresher with hands-on experience in AWS, Linux, Git, Docker, Jenkins, Kubernetes,maven,terraform and monitoring tools.  
 I focus on building, deploying, automating, and monitoring applications in cloud environments.
 ## 🧩 Projects
 
