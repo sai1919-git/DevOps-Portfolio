@@ -36,6 +36,8 @@ https://github.com/sai1919-git/projects/tree/main/project-1
 To understand how web applications are hosted in real environments by manually deploying application code on AWS EC2 using Linux and Nginx.
 
 ---
+---
+
 
 ## 🔹 Project 2: Dockerized Python Flask Application
 
@@ -67,6 +69,9 @@ docker run -d -p 80:5000 python-flask-app
 ```
 🎯 Goal
 To understand how applications can be packaged and deployed consistently across environments using Docker and containers.
+---
+
+---
 
 ### 🔹 Project 3: CI Pipeline with Jenkins (Dockerized Flask App)
 
@@ -118,3 +123,5 @@ docker rm -f $(docker ps -aq --filter ancestor=project3-app)
 docker run -d -p 5000:5000 project3-app
 ```
 🎯 Goal To understand how CI pipelines automate application builds and deployments using Jenkins and Docker. By integrating GitHub, Jenkins, Docker, and AWS EC2, I learned how real DevOps teams continuously build and deploy applications efficiently.
+---
+
