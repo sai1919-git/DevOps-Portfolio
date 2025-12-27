@@ -36,8 +36,6 @@ https://github.com/sai1919-git/projects/tree/main/project-1
 To understand how web applications are hosted in real environments by manually deploying application code on AWS EC2 using Linux and Nginx.
 
 ---
----
-
 
 ## 🔹 Project 2: Dockerized Python Flask Application
 
@@ -84,8 +82,6 @@ This project provided hands-on experience with **real-world CI workflows**, **Je
 🔗 **Repository:**  
 https://github.com/sai1919-git/projects/tree/main/project-3
 
----
-
 #### 🛠️ Tools Used
 - Jenkins  
 - Docker  
@@ -93,7 +89,6 @@ https://github.com/sai1919-git/projects/tree/main/project-3
 - Git & GitHub  
 - AWS EC2 (Ubuntu Linux)
 
----
 
 #### ✅ What I Did
 - Created a Python Flask web application  
@@ -106,15 +101,12 @@ https://github.com/sai1919-git/projects/tree/main/project-3
 - Deployed the latest container automatically  
 - Accessed the application via EC2 public IP  
 
----
 
 #### ⚙️ Jenkins Pipeline Flow
 1. Jenkins pulls the latest code from GitHub  
 2. Docker image is built from the Dockerfile  
 3. Existing container (if any) is removed  
 4. New container is started in detached mode with port mapping  
-
----
 
 #### 🐳 Docker Commands Used
 ```bash
@@ -123,5 +115,8 @@ docker rm -f $(docker ps -aq --filter ancestor=project3-app)
 docker run -d -p 5000:5000 project3-app
 ```
 🎯 Goal To understand how CI pipelines automate application builds and deployments using Jenkins and Docker. By integrating GitHub, Jenkins, Docker, and AWS EC2, I learned how real DevOps teams continuously build and deploy applications efficiently.
+
+---
+
 
 
