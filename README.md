@@ -136,7 +136,9 @@ AWS ECR
 
 ### ✅ What I Did
 -Created a Python Flask web application
+
 -Containerized the application using Docker
+
 -Installed and configured Jenkins on AWS EC2
 -Added AWS credentials securely in Jenkins
 -Wrote a Declarative Jenkinsfile for CI
