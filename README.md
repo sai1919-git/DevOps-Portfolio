@@ -156,8 +156,8 @@ Docker image is pushed to the AWS ECR repository
 
 ```bash
 docker build -t project4image:$BUILD_NUMBER .
-docker tag project4image:$BUILD_NUMBER 641944126006.dkr.ecr.ap-south-1.amazonaws.com/project-4:$BUILD_NUMBER
-docker push 641944126006.dkr.ecr.ap-south-1.amazonaws.com/project-4:$BUILD_NUMBER
+docker tag project4image:$BUILD_NUMBER 64194****.dkr.ecr.ap-south-1.amazonaws.com/project-4:$BUILD_NUMBER
+docker push 64194****.dkr.ecr.ap-south-1.amazonaws.com/project-4:$BUILD_NUMBER
 ```
 
 ### 🎯 Goal
