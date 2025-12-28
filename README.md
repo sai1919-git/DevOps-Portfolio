@@ -153,9 +153,12 @@ Docker image is tagged with the build number
 Docker image is pushed to the AWS ECR repository
 
 ### 🐳 Docker Commands Used
+
+```bash
 docker build -t project4image:$BUILD_NUMBER .
 docker tag project4image:$BUILD_NUMBER 641944126006.dkr.ecr.ap-south-1.amazonaws.com/project-4:$BUILD_NUMBER
 docker push 641944126006.dkr.ecr.ap-south-1.amazonaws.com/project-4:$BUILD_NUMBER
+```
 
 ### 🎯 Goal
 To understand how CI pipelines integrate Jenkins, Docker, and AWS ECR to automate image builds and secure cloud registry management.
