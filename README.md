@@ -117,6 +117,50 @@ docker run -d -p 5000:5000 project3-app
 To understand how CI pipelines automate application builds and deployments using Jenkins and Docker. By integrating GitHub, Jenkins, Docker, and AWS EC2, I learned how real DevOps teams continuously build and deploy applications efficiently.
 
 ---
+## 🔹 Project 4: CI Pipeline with Jenkins (Dockerized Flask App pushed to AWS ECR)
 
+### 📌 Description
+Implemented a Continuous Integration (CI) pipeline using Jenkins to automate the build and push of a Dockerized Python Flask application to AWS Elastic Container Registry (ECR).
+The Jenkins pipeline automatically pulls source code from GitHub, builds a Docker image, logs in securely to AWS ECR, tags the image, and pushes it to the ECR repository.
+This project provided hands-on experience with real-world CI workflows, Jenkins Declarative Pipelines, Docker automation, and cloud container registries.
+
+### 🔗 Repository:
+https://github.com/sai1919-git/projects/tree/main/project-4
+
+### 🛠️ Tools Used
+Jenkins
+Docker
+Python (Flask)
+Git & GitHub
+AWS EC2 (Ubuntu Linux)
+AWS ECR
+
+### ✅ What I Did
+Created a Python Flask web application
+Containerized the application using Docker
+Installed and configured Jenkins on AWS EC2
+Added AWS credentials securely in Jenkins
+Wrote a Declarative Jenkinsfile for CI
+Integrated GitHub repository with Jenkins
+Automated Docker image build, tag, and push to AWS ECR
+Verified the pushed images in AWS ECR
+
+### ⚙️ Jenkins Pipeline Flow
+Jenkins pulls the latest code from GitHub
+Docker image is built from the Dockerfile
+Jenkins logs in securely to AWS ECR using credentials
+Docker image is tagged with the build number
+Docker image is pushed to the AWS ECR repository
+
+### 🐳 Docker Commands Used
+docker build -t project4image:$BUILD_NUMBER .
+docker tag project4image:$BUILD_NUMBER 641944126006.dkr.ecr.ap-south-1.amazonaws.com/project-4:$BUILD_NUMBER
+docker push 641944126006.dkr.ecr.ap-south-1.amazonaws.com/project-4:$BUILD_NUMBER
+
+### 🎯 Goal
+To understand how CI pipelines integrate Jenkins, Docker, and AWS ECR to automate image builds and secure cloud registry management.
+By implementing this project, I learned how real DevOps teams continuously build, tag, and push containerized applications efficiently.
+
+---
 
 
