@@ -135,23 +135,21 @@ AWS EC2 (Ubuntu Linux)
 AWS ECR
 
 ### ✅ What I Did
--Created a Python Flask web application
-
--Containerized the application using Docker
-
--Installed and configured Jenkins on AWS EC2
--Added AWS credentials securely in Jenkins
--Wrote a Declarative Jenkinsfile for CI
--Integrated GitHub repository with Jenkins
--Automated Docker image build, tag, and push to AWS ECR
--Verified the pushed images in AWS ECR
+- Created a Python Flask web application
+- Containerized the application using Docker
+- Installed and configured Jenkins on AWS EC2
+- Added AWS credentials securely in Jenkins
+- Wrote a Declarative Jenkinsfile for CI
+- Integrated GitHub repository with Jenkins
+- Automated Docker image build, tag, and push to AWS ECR
+- Verified the pushed images in AWS ECR
 
 ### ⚙️ Jenkins Pipeline Flow
-1.Jenkins pulls the latest code from GitHub
-2.Docker image is built from the Dockerfile
-3.Jenkins logs in securely to AWS ECR using credentials
-4.Docker image is tagged with the build number
-5.Docker image is pushed to the AWS ECR repository
+1. Jenkins pulls the latest code from GitHub
+2. Docker image is built from the Dockerfile
+3. Jenkins logs in securely to AWS ECR using credentials
+4. Docker image is tagged with the build number
+5. Docker image is pushed to the AWS ECR repository
 
 ### 🐳 Docker Commands Used
 
