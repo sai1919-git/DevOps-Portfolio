@@ -90,16 +90,15 @@ https://github.com/sai1919-git/projects/tree/main/project-3
 
 
 ### ✅ What I Did
-- Created a Python Flask web application  
-- Containerized the application using Docker  
-- Installed and configured Jenkins on AWS EC2  
-- Wrote a Declarative Jenkinsfile  
-- Integrated GitHub with Jenkins for CI  
-- Automated Docker image build process  
-- Removed old containers to avoid port conflicts  
-- Deployed the latest container automatically  
-- Accessed the application via EC2 public IP  
 
+Created a Python Flask web application
+Containerized the application using Docker
+Installed and configured Jenkins on AWS EC2
+Added AWS credentials securely in Jenkins
+Wrote a Declarative Jenkinsfile for CI
+Integrated GitHub repository with Jenkins
+Automated Docker image build, tag, and push to AWS ECR
+Verified the pushed images in AWS ECR  
 
 ### ⚙️ Jenkins Pipeline Flow
 1. Jenkins pulls the latest code from GitHub  
