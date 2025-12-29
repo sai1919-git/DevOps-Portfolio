@@ -184,42 +184,49 @@ AWS ECR
 Docker
 kubectl
 eksctl
-Python (Flask)
+Python 
 
 ### ✅ What I Did
-Created a Python Flask application
-Containerized the application using Docker
-Created an EKS cluster using eksctl
-Deployed the Docker image on EKS pods
-Exposed the application via a LoadBalancer service
-Verified the application was running using the LoadBalancer DNS
-Cleaned up AWS resources (EKS cluster, EC2, ECR, LoadBalancer)
+- Created a Python application
+- Containerized the application using Docker
+- Created an EKS cluster using eksctl
+- Deployed the Docker image on EKS pods
+- Exposed the application via a LoadBalancer service
+- Verified the application was running using the LoadBalancer DNS
+- Cleaned up AWS resources (EKS cluster, EC2, ECR, LoadBalancer)
 
 ### ⚙️ Deployment Flow
-Build Docker image from the Flask application
-Tag Docker image and push to AWS ECR
-Create an EKS cluster using eksctl
-Deploy the application using Kubernetes Deployment
-Expose the application using a LoadBalancer service
-Access the application via the external LoadBalancer DNS
-
-### 🐳 Docker Commands Used
+- Build Docker image from the Flask application
+- Tag Docker image and push to AWS ECR
+- Create an EKS cluster using eksctl
+- Deploy the application using Kubernetes Deployment
+- Expose the application using a LoadBalancer service
+- Access the application via the external LoadBalancer DNS
+  
+### 🐳 Docker / ECR Commands
 ```bash
 docker build -t eks-app .
+aws ecr get-login-password --region <REGION> | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com
 docker tag eks-app:latest <ECR_URI>:latest
 docker push <ECR_URI>:latest
 ```
 ### 🖥️ kubectl & eksctl Commands Used
 ```bash
-#### Verify nodes
+# Create EKS cluster
+eksctl create cluster \
+  --name project-5 \
+  --region ap-south-1 \
+  --nodegroup-name project-5-nodes \
+  --node-type t3.medium \
+  --nodes 2 \
+  --nodes-min 1 \
+  --nodes-max 3 \
+  --managed
+
 kubectl get nodes
-#### Apply deployment
 kubectl apply -f deployment.yaml
-#### Apply service
 kubectl apply -f service.yaml
-#### Watch service until LoadBalancer is ready
 kubectl get svc eks-app-service -w
-#### Delete EKS cluster
 eksctl delete cluster --name project-5 --region ap-south-1
 ```
 
