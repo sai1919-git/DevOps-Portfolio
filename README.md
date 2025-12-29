@@ -168,18 +168,16 @@ By implementing this project, I learned how real DevOps teams continuously build
 
 
 ## 🔹 Project 5: AWS EKS Cluster + App Deployment
-### 📌 Description
 
+### 📌 Description
 Deployed a Python Flask application on AWS EKS using Docker containers.
 The project involved building a Docker image, pushing it to AWS ECR, deploying it on an EKS cluster, and exposing it using a LoadBalancer.
 This project provided hands-on experience with Kubernetes deployments, EKS architecture, worker nodes, and cloud-based load balancing.
 
 ### 🔗 Repository:
-
-https://github.com/yourusername/projects/tree/main/project-5
+https://github.com/sai1919-git/projects/tree/main/project-4
 
 ### 🛠️ Tools Used
-
 AWS EKS
 AWS EC2 (Ubuntu Linux)
 AWS ECR
@@ -189,33 +187,20 @@ eksctl
 Python (Flask)
 
 ### ✅ What I Did
-
 Created a Python Flask application
-
 Containerized the application using Docker
-
 Created an EKS cluster using eksctl
-
 Deployed the Docker image on EKS pods
-
 Exposed the application via a LoadBalancer service
-
 Verified the application was running using the LoadBalancer DNS
-
 Cleaned up AWS resources (EKS cluster, EC2, ECR, LoadBalancer)
 
 ### ⚙️ Deployment Flow
-
 Build Docker image from the Flask application
-
 Tag Docker image and push to AWS ECR
-
 Create an EKS cluster using eksctl
-
 Deploy the application using Kubernetes Deployment
-
 Expose the application using a LoadBalancer service
-
 Access the application via the external LoadBalancer DNS
 
 ### 🐳 Docker Commands Used
@@ -226,7 +211,6 @@ docker push <ECR_URI>:latest
 ```
 
 ### 🎯 Goal
-
 To learn containerized application deployment on AWS EKS, including Docker image management with AWS ECR, Kubernetes deployments, and exposing services via LoadBalancer.
 This project demonstrates practical DevOps skills in deploying applications to a production-ready cloud environment.
 
