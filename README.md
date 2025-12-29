@@ -209,6 +209,19 @@ docker build -t eks-app .
 docker tag eks-app:latest <ECR_URI>:latest
 docker push <ECR_URI>:latest
 ```
+### 🖥️ kubectl & eksctl Commands Used
+```bash
+#### Verify nodes
+kubectl get nodes
+#### Apply deployment
+kubectl apply -f deployment.yaml
+#### Apply service
+kubectl apply -f service.yaml
+#### Watch service until LoadBalancer is ready
+kubectl get svc eks-app-service -w
+#### Delete EKS cluster
+eksctl delete cluster --name project-5 --region ap-south-1
+```
 
 ### 🎯 Goal
 To learn containerized application deployment on AWS EKS, including Docker image management with AWS ECR, Kubernetes deployments, and exposing services via LoadBalancer.
