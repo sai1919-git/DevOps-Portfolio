@@ -175,7 +175,7 @@ The project involved building a Docker image, pushing it to AWS ECR, deploying i
 This project provided hands-on experience with Kubernetes deployments, EKS architecture, worker nodes, and cloud-based load balancing.
 
 ### 🔗 Repository:
-https://github.com/sai1919-git/projects/tree/main/project-4
+https://github.com/sai1919-git/projects/tree/main/project-5
 
 ### 🛠️ Tools Used
 AWS EKS
