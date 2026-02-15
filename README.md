@@ -167,7 +167,7 @@ By implementing this project, I learned how real DevOps teams continuously build
 ---
 
 
-## 🔹 Project 5: AWS EKS Cluster + App Deployment
+## 🔹 Project 5: cloud native application deployment using AWS kubernetes (AWS EKS) 
 
 ### 📌 Description
 Deployed a Python Flask application on AWS EKS using Docker containers.
