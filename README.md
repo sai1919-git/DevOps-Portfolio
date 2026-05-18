@@ -297,10 +297,10 @@ aws ecs update-service \
   --force-new-deployment
 ```
 ### 🎯 Goal
-```
+
 To learn production-grade deployment strategies using AWS ECS Fargate with Blue-Green deployments.
 This project demonstrates practical experience in zero-downtime deployments, traffic switching using ALB, container orchestration, and scalable serverless container management on AWS.
-```
+
 
 ---
 
@@ -361,8 +361,8 @@ terraform apply -var-file="dev.tfvars"
 terraform destroy -var-file="dev.tfvars"
 ```
 ### 🎯 Goal
-```
+
 To understand real-world Infrastructure as Code (IaC) practices by automating AWS infrastructure provisioning using Terraform.
 This project demonstrates modular Terraform architecture, environment management, remote state handling, and scalable cloud infrastructure automation used in DevOps environments.
-```
+
 
