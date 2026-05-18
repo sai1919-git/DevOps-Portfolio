@@ -244,7 +244,7 @@ The project involved deploying multiple application versions with zero downtime 
 This project provided hands-on experience with ECS task definitions, Fargate serverless containers, ALB target groups, and production-style deployment strategies on AWS.
 
 ### 🔗 Repository:
-https://github.com/sai1919-git/projects/tree/main/project-6
+https://github.com/sai1919-git/projects/tree/main/4-ECS%20with%20fargate-blue-green
 
 ### 🛠️ Tools Used
 AWS ECS  
