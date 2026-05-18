@@ -236,4 +236,133 @@ This project demonstrates practical DevOps skills in deploying applications to a
 
 ---
 
+## 🔹 Project 6: Blue-Green Deployment using AWS ECS Fargate
+
+### 📌 Description
+Implemented a Blue-Green deployment strategy for a containerized application using AWS ECS Fargate and Application Load Balancer (ALB).  
+The project involved deploying multiple application versions with zero downtime by shifting traffic between blue and green environments.  
+This project provided hands-on experience with ECS task definitions, Fargate serverless containers, ALB target groups, and production-style deployment strategies on AWS.
+
+### 🔗 Repository:
+https://github.com/sai1919-git/projects/tree/main/project-6
+
+### 🛠️ Tools Used
+AWS ECS  
+AWS Fargate  
+AWS ECR  
+Application Load Balancer (ALB)  
+Docker  
+AWS IAM  
+AWS VPC  
+CloudWatch  
+Git & GitHub  
+Linux  
+
+### ✅ What I Did
+- Created and containerized the application using Docker
+- Pushed Docker images to AWS ECR
+- Configured ECS Cluster and ECS Services using AWS Fargate
+- Created separate blue and green target groups
+- Configured ALB listener rules for traffic switching
+- Implemented Blue-Green deployment workflow with zero downtime
+- Verified application accessibility after traffic shift
+- Monitored ECS tasks and service health using CloudWatch
+- Tested rollback scenarios between application versions
+
+### ⚙️ Deployment Flow
+- Build Docker image from the application
+- Push Docker image to AWS ECR
+- Create ECS Task Definition using the container image
+- Deploy application on ECS Fargate service
+- Configure ALB with blue and green target groups
+- Shift traffic from old version (blue) to new version (green)
+- Verify deployment health and application accessibility
+- Roll back to previous version if issues are detected
+
+### 🐳 Docker / AWS Commands Used
+```bash
+docker build -t ecs-app .
+
+docker tag ecs-app:latest <ECR_URI>:latest
+
+docker push <ECR_URI>:latest
+
+aws ecs create-cluster --cluster-name ecs-fargate-cluster
+
+aws ecs register-task-definition --cli-input-json file://task-definition.json
+
+aws ecs update-service \
+  --cluster ecs-fargate-cluster \
+  --service ecs-service \
+  --force-new-deployment
+```
+### 🎯 Goal
+```
+To learn production-grade deployment strategies using AWS ECS Fargate with Blue-Green deployments.
+This project demonstrates practical experience in zero-downtime deployments, traffic switching using ALB, container orchestration, and scalable serverless container management on AWS.
+```
+
+---
+
+## 🔹 Project 7: AWS Infrastructure Provisioning using Terraform
+
+### 📌 Description
+Provisioned a complete AWS infrastructure environment from scratch using Terraform by replacing manual AWS Console configurations with reusable Infrastructure as Code (IaC).  
+Built modular Terraform configurations for networking, compute, and security resources while managing multiple environments using `.tfvars` files.  
+Implemented remote state management with S3 backend and DynamoDB state locking to support collaborative and production-style infrastructure provisioning workflows.
+
+### 🔗 Repository:
+https://github.com/sai1919-git/projects/tree/main/aws-terraform-infra
+
+### 🛠️ Tools Used
+Terraform  
+AWS EC2  
+AWS VPC  
+AWS S3  
+AWS DynamoDB  
+AWS IAM  
+Security Groups  
+Route Tables  
+Git & GitHub  
+Linux  
+
+### ✅ What I Did
+- Created reusable Terraform modules for AWS infrastructure resources
+- Provisioned VPC, public/private subnets, route tables, and internet gateway
+- Configured EC2 instances and security groups using Terraform
+- Managed dev, staging, and production environments using separate `.tfvars` files
+- Configured S3 backend for remote Terraform state management
+- Implemented DynamoDB state locking to prevent concurrent state conflicts
+- Organized Terraform codebase into modular and reusable directory structure
+- Automated infrastructure provisioning and teardown using Terraform commands
+- Reduced manual infrastructure setup time significantly
+
+### ⚙️ Infrastructure Provisioning Flow
+- Write reusable Terraform modules
+- Configure provider and backend settings
+- Define environment-specific variables using `.tfvars`
+- Initialize Terraform backend using S3 and DynamoDB
+- Plan infrastructure changes using `terraform plan`
+- Provision AWS resources using `terraform apply`
+- Destroy infrastructure safely using `terraform destroy`
+
+### 🖥️ Terraform Commands Used
+```bash
+terraform init
+
+terraform fmt
+
+terraform validate
+
+terraform plan -var-file="dev.tfvars"
+
+terraform apply -var-file="dev.tfvars"
+
+terraform destroy -var-file="dev.tfvars"
+```
+### 🎯 Goal
+```
+To understand real-world Infrastructure as Code (IaC) practices by automating AWS infrastructure provisioning using Terraform.
+This project demonstrates modular Terraform architecture, environment management, remote state handling, and scalable cloud infrastructure automation used in DevOps environments.
+```
 
